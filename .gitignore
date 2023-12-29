@@ -4,3 +4,4 @@ assessment/.env
 assessment/cypressResults.json
 assessment/cypress/screenshots
 node_modules
+.vercel
