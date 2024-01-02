@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 escribe("Qtify Automation", () => {
   beforeEach(() => {
-    cy.visit("  https://crio-1232sadhana-me-qtify-6wfxoybll-sadhana-jadhavs-projects.vercel.app/");
+    cy.visit(" https://crio-1232sadhana-me-qtify-dpcdcqpzs-sadhana-jadhavs-projects.vercel.app /");
     // cy.visit("https://example.com/");
   });
   describe("Navbar", () => {
