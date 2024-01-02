@@ -1,6 +1,7 @@
-describe("Qtify Automation", () => {
+// eslint-disable-next-line no-undef
+escribe("Qtify Automation", () => {
   beforeEach(() => {
-    cy.visit("https://sadhana-my-qtify.netlify.app");
+    cy.visit("  https://crio-1232sadhana-me-qtify-6wfxoybll-sadhana-jadhavs-projects.vercel.app/");
     // cy.visit("https://example.com/");
   });
   describe("Navbar", () => {
