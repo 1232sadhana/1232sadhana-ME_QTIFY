@@ -6,7 +6,7 @@ console.log(process.env.USER_LINK_SUBMISSION)
 const fileContent = fs.readFileSync('./cypress/e2e/spec.cy.js', 'utf8');
 
 
-const updatedContent = fileContent.replace("https://crio-1232sadhana-me-qtify-dpcdcqpzs-sadhana-jadhavs-projects.vercel.app", process.env.USER_LINK_SUBMISSION);
+const updatedContent = fileContent.replace("https://crio-1232sadhana-me-qtify-5zza3i7ah-sadhana-jadhavs-projects.vercel.app", process.env.USER_LINK_SUBMISSION);
 fs.writeFileSync('./cypress/e2e/spec.cy.js', updatedContent);
 
 // Run Cypress tests
