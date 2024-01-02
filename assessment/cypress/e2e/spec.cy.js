@@ -1,6 +1,6 @@
 describe("Qtify Automation", () => {
   beforeEach(() => {
-    cy.visit("https://example.com/");
+    cy.visit("https://sadhana-my-qtify.netlify.app");
     // cy.visit("https://example.com/");
   });
   describe("Navbar", () => {
