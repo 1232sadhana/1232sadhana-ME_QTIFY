@@ -1,3 +1,4 @@
+import React from 'react'; // Import React at the beginning if it's not already imported
 import "./SearchBar.css";
 import searchIcon from "../../../Assets/Search icon.png";
 

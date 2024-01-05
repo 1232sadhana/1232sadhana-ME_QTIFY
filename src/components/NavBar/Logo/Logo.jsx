@@ -1,4 +1,5 @@
-import LogoImage from "../../../Assets/logo.png";
+import React from 'react';
+import LogoImage from '../../../Assets/logo.png';
 
 /**
  * Represents the logo component.

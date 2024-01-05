@@ -1,6 +1,6 @@
 describe("Qtify Automation", () => {
   beforeEach(() => {
-    cy.visit("https://crio-1232sadhana-me-qtify-ib676j19g-sadhana-jadhavs-projects.vercel.app");
+    cy.visit("https://crio-1232sadhana-me-qtify-1e99x4qby-sadhana-jadhavs-projects.vercel.app");
     // cy.visit("https://example.com/");
   });
   describe("Navbar", () => {
