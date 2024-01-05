@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./Card.css";
 
 /**
@@ -28,18 +27,6 @@ const Card = ({ data, type }) => {
     default:
       return null;
   }
-};
-
-// Prop type validation
-Card.propTypes = {
-  data: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    follows: PropTypes.number.isRequired,
-    // Add other required props here
-  }).isRequired,
-  type: PropTypes.string.isRequired,
 };
 
 export default Card;

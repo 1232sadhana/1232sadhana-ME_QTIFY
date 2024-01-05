@@ -1,13 +1,8 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/jsx-no-undef */
-
-import React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import PropTypes from "prop-types";
 import "./ExploreAccordion.css";
 
 /**
@@ -55,14 +50,6 @@ const ExploreAccordion = ({ data }) => {
       </Accordion>
     </div>
   );
-};
-
-// Prop type validation
-ExploreAccordion.propTypes = {
-  data: PropTypes.shape({
-    question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default ExploreAccordion;

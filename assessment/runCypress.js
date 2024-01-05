@@ -1,6 +1,6 @@
-import * as cypress from 'cypress';
-import { promises as fsPromises } from 'fs';
-import * as dotenv from 'dotenv';
+const cypress = require('cypress');
+const fsPromises = require('fs').promises;
+const dotenv = require('dotenv');
 
 dotenv.config();
 console.log(process.env.USER_LINK_SUBMISSION);

@@ -1,4 +1,3 @@
-import React from 'react'; // Import React at the beginning if it's not already imported.
 import Filter from "./Filter/Filter";
 
 const Songs = () => {
