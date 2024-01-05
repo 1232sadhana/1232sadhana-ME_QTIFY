@@ -1,6 +1,6 @@
-import cypress from 'cypress';
+import * as cypress from 'cypress';
 import { promises as fsPromises } from 'fs';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 
 dotenv.config();
 console.log(process.env.USER_LINK_SUBMISSION);
@@ -24,4 +24,7 @@ async function runCypress() {
 }
 
 // Call the async function
-runCypress();
+runCypress().then(() => process.exit(0)).catch(err => {
+  console.error('Error:', err);
+  process.exit(1);
+});
