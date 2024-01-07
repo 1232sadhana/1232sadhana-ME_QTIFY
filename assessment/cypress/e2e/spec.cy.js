@@ -1,6 +1,7 @@
 describe("Qtify Automation", () => {
   beforeEach(() => {
-    cy.visit("https://crio-1232sadhana-me-qtify-eh8kaoz6v-sadhana-jadhavs-projects.vercel.app")
+    cy.visit("https://example.com/");
+    // cy.visit("https://example.com/");
   });
   describe("Navbar", () => {
     it("Should contain logo, search bar, and a button", () => {
@@ -33,6 +34,7 @@ describe("Qtify Automation", () => {
             const navbarHeight = $img.parent().height();
             const logoHeight = $img.height();
             const topSpace = parseInt($img.css("marginTop"), 10);
+            const bottomSpace = parseInt($img.css("marginBottom"), 10);
 
             expect(navbarHeight / 2).to.be.closeTo(
               logoHeight / 2 + topSpace,

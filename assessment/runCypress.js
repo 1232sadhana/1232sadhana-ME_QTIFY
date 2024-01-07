@@ -1,30 +1,16 @@
 const cypress = require('cypress');
-const fsPromises = require('fs').promises;
-const dotenv = require('dotenv');
+const fs = require('fs');
+const { execSync } = require('child_process');
+require('dotenv').config();
+console.log(process.env.USER_LINK_SUBMISSION)
+// Replace 'https://example.com' with the actual URL
+const fileContent = fs.readFileSync('./cypress/e2e/spec.cy.js', 'utf8');
+const updatedContent = fileContent.replace(/http[^\"]+/g, process.env.USER_LINK_SUBMISSION);
+fs.writeFileSync('./cypress/e2e/spec.cy.js', updatedContent);
 
-dotenv.config();
-console.log(process.env.USER_LINK_SUBMISSION);
-
-async function runCypress() {
-  try {
-    const filePath = './cypress/e2e/spec.cy.js';
-    let fileContent = await fsPromises.readFile(filePath, 'utf8');
-
-    const updatedContent = fileContent.replace("https://crio-1232sadhana-me-qtify-eh8kaoz6v-sadhana-jadhavs-projects.vercel.app", process.env.USER_LINK_SUBMISSION);
-    
-    await fsPromises.writeFile(filePath, updatedContent);
-
-    const results = await cypress.run();
-    await fsPromises.writeFile('cypressResults.json', JSON.stringify(results, null, 2));
-
-    console.log('Cypress tests completed successfully.');
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-// Call the async function
-runCypress().then(() => process.exit(0)).catch(err => {
-  console.error('Error:', err);
-  process.exit(1);
+// Run Cypress tests
+cypress.run().then((results) => {
+  fs.writeFileSync('cypressResults.json', JSON.stringify(results, null, 2));
+}).catch((err) => {
+  console.error(err);
 });

@@ -3,8 +3,3 @@ assessment/node_modules
 assessment/.env
 assessment/cypressResults.json
 assessment/cypress/screenshots
-node_modules
-.vercel
-
-# Local Netlify folder
-.netlify
