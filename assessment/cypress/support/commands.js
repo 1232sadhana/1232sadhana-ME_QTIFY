@@ -7,8 +7,17 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
-//
+//// cypress/support/commands.js
+Cypress.Commands.add('login', (username, email, password) => {
+  cy.visit('https://vercel.com/login'); // Make sure to navigate to the login page first
+
+  cy.get('input[name="email"]').type(email);
+  cy.get('input[name="password"]').type(password);
+  
+  cy.get('button[type="submit"]').click();
+  cy.url().should('include', '/dashboard');
+  // cy.get('.dashboard').should('be.visible');
+});
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //

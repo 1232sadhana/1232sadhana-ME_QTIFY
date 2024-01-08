@@ -1,9 +1,8 @@
 describe("Qtify Automation", () => {
   beforeEach(() => {
-    console.log('Visiting URL...');
+    cy.login('1232sadhana', '1232sadhana@gmail.com', '1232Sandy@1996');
     cy.visit("https://my-qtify-f7oqjgp42-sadhana-jadhavs-projects.vercel.app");
-    console.log('URL visited successfully.');
-    // Other setup steps
+    // cy.visit("https://my-qtify-f7oqjgp42-sadhana-jadhavs-projects.vercel.app");
   });
   describe("Navbar", () => {
     it("Should contain logo, search bar, and a button", () => {
@@ -135,3 +134,4 @@ describe("Qtify Automation", () => {
     });
   });
 });
+
