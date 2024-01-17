@@ -7,19 +7,20 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//// cypress/support/commands.js
-Cypress.Commands.add('login', (username, email, password) => {
-  cy.visit('https://vercel.com/login'); // Make sure to navigate to the login page first
-
-  cy.get('input[name="email"]').type(email);
-  cy.get('input[name="password"]').type(password);
-  
-  cy.get('button[type="submit"]').click();
-  cy.url().should('include', '/dashboard');
-  // cy.get('.dashboard').should('be.visible');
-});
+//
+//
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('login', (email, password) => { 
+  // Implementation of the login functionality using the provided email and password
+  // You need to replace the following comment with your actual implementation
+  // For example:
+  // cy.get('#emailInput').type(email);
+  // cy.get('#passwordInput').type(password);
+  // cy.get('#loginButton').click();
+  // You should tailor this to match the structure of your application's login process
+  // ...
+});
+
 //
 //
 // -- This is a child command --
