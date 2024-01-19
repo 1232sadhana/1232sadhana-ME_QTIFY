@@ -10,17 +10,10 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => { 
-  // Implementation of the login functionality using the provided email and password
-  // You need to replace the following comment with your actual implementation
-  // For example:
-  // cy.get('#emailInput').type(email);
-  // cy.get('#passwordInput').type(password);
-  // cy.get('#loginButton').click();
-  // You should tailor this to match the structure of your application's login process
-  // ...
-});
-
+//Cypress.Commands.add('login', (email, password) => {
+  // Your login logic here
+//});
+  
 //
 //
 // -- This is a child command --

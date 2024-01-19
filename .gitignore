@@ -5,3 +5,6 @@ assessment/cypressResults.json
 assessment/cypress/screenshots
 
 .vercel
+
+# Local Netlify folder
+.netlify

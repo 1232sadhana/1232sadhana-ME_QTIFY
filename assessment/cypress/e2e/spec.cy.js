@@ -1,10 +1,9 @@
 describe("Qtify Automation", () => {
   beforeEach(() => {
-    cy.visit("https://my-qtify-f7oqjgp42-sadhana-jadhavs-projects.vercel.app");
-    // cy.visit("https://example.com/");
-    cy.login("1232sadhana@gmail.com", "1232Sandy@1996");
-
-  });
+   cy.visit();
+    // cy.visit("https://my-qtify-f7oqjgp42-sadhana-jadhavs-projects.vercel.app");
+    
+   });
   describe("Navbar", () => {
     it("Should contain logo, search bar, and a button", () => {
       // Use the custom command to find the navbar container
