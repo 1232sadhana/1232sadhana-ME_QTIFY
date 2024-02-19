@@ -1,7 +1,7 @@
 describe("Qtify Automation", () => {
   beforeEach(() => {
     cy.visit("https://me-qtify-app.vercel.app/");
-    // cy.visit("https://example.com/");
+    // cy.visit("https://me-qtify-app.vercel.app/");
   });
   describe("Navbar", () => {
   it("Should contain logo, search bar, and a button", () => {
